@@ -2,11 +2,14 @@
   "name": "wp-tindog",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://FernandoJCastellanos.github.io/WP-Headless-Tindog",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
@@ -22,5 +25,8 @@
     "react-dom": "18.2.0",
     "react-scroll": "^1.8.9",
     "tailwindcss": "3.3.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }

@@ -43,20 +43,6 @@ export default function Home() {
     pullNavJson()
   },[])
 
-  const [windowWidth, setWindowWidth] = useState(null);
-
-  // Update windowWidth state when the window size changes
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [window.innerWidth]);
 
 
 

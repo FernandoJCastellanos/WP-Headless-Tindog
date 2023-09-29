@@ -17,7 +17,7 @@ const NavbarBurger = ({props}) => {
 
 
     const [isOpen, setOpen] = useState(false)
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth, setWindowWidth] = useState(900);
 
 
       function burgerClick(){
